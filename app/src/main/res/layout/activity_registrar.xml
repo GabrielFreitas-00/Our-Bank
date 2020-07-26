@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".Activitys.registrar">
+
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_arredond"
+        android:ems="10"
+        android:hint="Nome e Sobrenome:"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_arredond"
+        android:ems="10"
+        android:hint="E-mail: "
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_arredond"
+        android:ems="10"
+        android:hint="Senha:"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:met_mask="+55 (##) #####-####"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/card_arredond"
+        android:hint="Telefone: ex: (DD) XXXXX-XXXX"
+        android:inputType="number" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/editTextCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/card_arredond"
+            android:ems="9"
+            android:layout_margin="5dp"
+            android:hint="Cep: ex: (XXXXXXXX)"
+            app:met_mask="########"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/editTextCepNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/card_arredond"
+            android:ems="3"
+            android:hint="N:"
+            app:met_mask="######"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editTextCepComplemento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/card_arredond"
+            android:hint="Complemento"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:textSize="18sp"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/textBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cadastrar"
+        android:background="@drawable/card_arredond"/>
+
+</LinearLayout>

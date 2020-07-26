@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activitys.MainActivity"
+    android:background="#f8f8f8">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#27745f">
+
+        <TextView
+            android:id="@+id/textViewFrase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"
+            android:text="@string/Frase_principal"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/dinheiro"
+            android:padding="50dp"
+            android:layout_gravity="end|center_vertical"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="@string/e_mail"
+        android:background="@drawable/card_arredond"/>
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="@string/senha"
+        android:inputType="textWebPassword"
+        android:background="@drawable/card_arredond"/>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/card_arredond"
+        android:text="@string/btnAcessar" />
+
+    <TextView
+        android:id="@+id/textViewForgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:text="@string/esqueci_a_senha" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:text="@string/texto_registre_se"/>
+
+
+
+
+</LinearLayout>

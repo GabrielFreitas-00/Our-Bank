@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Our Bank</string>
+    <string name="Frase_principal">O Banco digital \nque facilita \nsua vida !</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="senha">Senha</string>
+    <string name="btnAcessar">Acessar</string>
+    <string name="registre_se">Registre-se</string>
+    <string name="texto_registre_se">Não possui conta ? Registre -se</string>
+    <string name="esqueci_a_senha">Esqueci a senha</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.Conta"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Dados da conta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNomeConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="casual"
+            android:hint="Nome"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textTelefoneConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:hint="Telefone" />
+
+        <TextView
+            android:id="@+id/textAgenciaConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:hint="Agencia" />
+
+        <TextView
+            android:id="@+id/textSaldoConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saldo"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextTransfere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira o valor para transferir"
+            android:inputType="numberDecimal"
+            android:background="@drawable/card_arredond"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnTransferir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transferir"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
